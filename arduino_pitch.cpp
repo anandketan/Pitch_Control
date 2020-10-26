@@ -1,10 +1,10 @@
-//MPU9250 SiP 9-axis Motion Processing Unit
-//Combines two chips: the MPU-6500, which contains a 3-axis gyroscope, a 3-axis accelerometer
-//And the AK8963, the market leading 3-axis digital compass
+//MPU-9250 SiP 9-axis Motion Processing Unit
+//Combines two chips: the MPU-6500, which contains a 3-axis gyroscope with a 3-axis accelerometer
+//And the AK-8963, containing a 3-axis digital compass
 
 //*********************************************************
 
-//Pitch Control using the MPU9250 to alter deflector angle
+//Pitch Control using the MPU-9250 to alter deflector angle
 
 #include "Arduino.h"
 #include <Wire.h>
@@ -27,7 +27,7 @@ bool MPU9250::begin(mpu9250_dps_t scale, mpu9250_range_t range, int mpua)
     tg.ZAxis = 0;
     actualThreshold = 0;
 
-    if (fastRegister8(MPU9250_REG_AM_I) != 0x68)   //MPU9250 check if register
+    if (fastRegister8(MPU9250_REG_AM_I) != 0x68)   //MPU-9250 check if register
     {
 	return false;
     }
