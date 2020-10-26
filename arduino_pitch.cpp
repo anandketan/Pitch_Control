@@ -27,7 +27,7 @@ bool MPU9250::begin(mpu9250_dps_t scale, mpu9250_range_t range, int mpua)
     tg.ZAxis = 0;
     actualThreshold = 0;
 
-    if (fastRegister8(MPU9250_REG_AM_I) != 0x68)   //MPU-9250 check if register
+    if (fastRegister8(MPU9250_REG_AM_I) != 0x68)   //MPU-9250 rapid check register 
     {
 	return false;
     }
