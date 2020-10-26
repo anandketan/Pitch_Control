@@ -11,8 +11,8 @@ Procedure for using MPU-9250 - refer "arduino_pitch.cpp" - 3 DoF gyrosocpe: <br>
 4. Change angle of deflection to alter pitch suitably.
 
 ## References
-Pitch controller design: https://www.researchgate.net/figure/The-pitch-controller-synthesis_fig1_275533475
-Arduino MPU-9250 manual: https://invensense.tdk.com/products/motion-tracking/9-axis/mpu-9250/
+Pitch controller design: https://www.researchgate.net/figure/The-pitch-controller-synthesis_fig1_275533475  <br>
+Arduino MPU-9250 manual: https://invensense.tdk.com/products/motion-tracking/9-axis/mpu-9250/  <br>
 PID tuning methods: https://ctms.engin.umich.edu/CTMS/index.php?example=Introduction&section=ControlPID
 
 
