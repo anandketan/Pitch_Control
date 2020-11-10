@@ -6,7 +6,7 @@ altering elevator deflection angle.
 
 Procedure for using MPU-9250 - refer "arduino_pitch.cpp" - 3 DoF gyrosocpe: <br>
 1. Fix address, reset calibrate, reset threshold from previous iterations.
-2. Set up clock souorce, scale and range of functioning.
+2. Set up clock source, scale and range of functioning.
 3. Read input for elevator as 8-bit values loaded into fast registers.
 4. Change angle of deflection to alter pitch suitably.
 
