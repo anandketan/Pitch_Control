@@ -64,7 +64,7 @@ void MPU9250::setScale(mpu9250_dps_t scale)
 	    break;
     }
 
-    value = readRegister8(MPU9250_REG_GYRO_CONFIG);   //Initialize transfer of pitch data
+    value = readRegister8(MPU9250_REG_GYRO_CONFIG);   //Initialize transfer of pitch data from sensor
     value &= 0b11100111;
     value |= (scale << 3);
     writeRegister8(MPU9250_REG_GYRO_CONFIG, value);
